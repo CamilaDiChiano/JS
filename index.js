@@ -1,11 +1,10 @@
 
+let numero = prompt("Ingrese su edad para obtener acceso");
 
-const edad = parseInt(prompt("Ingrese su edad para obtener acceso"));
-if(edad >= 15){
-    alert("Puedes ingresar al sitio");
-}else{
+while( numero > 15);{
     alert("No puedes ingresar al sitio");
+    numero  = prompt("Ingrese su edad para obtener acceso");
 }
 
-
+alert("Bienvenid@");
 
