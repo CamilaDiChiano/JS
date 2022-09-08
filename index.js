@@ -63,7 +63,6 @@ const piedras = [
     console.log(item.precio);
   }
 
-  
    
 
 
