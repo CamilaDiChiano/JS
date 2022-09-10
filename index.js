@@ -1,4 +1,3 @@
-
 // // ENTREGA 1
 
 // let numero = prompt("Ingrese su edad para obtener acceso");
@@ -50,25 +49,59 @@
 
 // ARRAY
 
+// const piedras = [
+//     {id: 1, nombre: "Cuarzo azul", precio: 800},
+//     {id: 2, nombre: "Agata azul", precio: 880},
+//     {id: 3, nombre: "Citrino", precio: 790},
+//     {id: 4, nombre: "Turmalina negra", precio: 900
+//     },
+// ];
+
+// for (const item of piedras) {
+//     console.log(item.nombre);
+//     console.log(item.precio);
+// }
+
+
+
+
+
+
+
+
+
+
+// PRIMERA ENTREGA
+
+let nombrePiedra = prompt("Ingrese la piedra de su preferencia");
 
 const piedras = [
-    { id: 1, nombre: "Cuarzo azul", precio: 800 },
-    { id: 2, nombre: "Agata azul", precio: 880 },
-    { id: 3, nombre: "Citrino", precio: 790 },
-    { id: 4, nombre: "Turmalina negra", precio: 900 },
-  ];
+    {id: 1, nombre: "Cuarzo azul", precio: 800},
+    {id: 2, nombre: "Agata azul", precio: 880},
+    {id: 3, nombre: "Citrino", precio: 790},
+    {id: 4, nombre: "Turmalina negra", precio: 900
+    },
+];
 
-  for(const item of piedras){
-    console.log(item.nombre);
-    console.log(item.precio);
-  }
+console.log(nombrePiedra);
+function mostrarPiedra(piedras){
+let piedraDeSuPreferencia = piedras.find((item) => nombrePiedra === item.nombre);
 
-   
+alert( `La piedra de su preferencia es  ${piedraDeSuPreferencia} y cuesta ${piedraDeSuPreferencia.precio}`
+);
+}
 
+mostrarPiedra(piedras);
 
+//   EJEMPLO: la persona elige las piedras que quiere comprar
 
+let compraDePiedras = prompt("Ingrese el nombre de las piedras a comprar");
 
+ var miTotal = 0
+ var suma = miTotal + piedras.find((item) => compraDePiedras === item.nombre);
 
-
-
-
+ function costoTotal(seleccionados) {
+     this.seleccionados = seleccionados
+     alert (`El costo total es ${suma}`);
+ }
+ costoTotal();
