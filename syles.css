@@ -1,0 +1,21 @@
+.menu {
+    font-size: 15px;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.lista {
+    display: inline-flex;
+    
+}
+
+#consulta{
+    margin-top: 5px;
+    height: 20px;
+    width: 200px;
+}
+
+
+.rojo {
+    background-color: red;
+}
