@@ -8,4 +8,4 @@ consulta.addEventListener("keyup" , (e) => {
     }
 });
 
-
+console.log(consulta);
