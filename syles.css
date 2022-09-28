@@ -1,7 +1,7 @@
 .menu {
     font-size: 15px;
     background-color: black;
-    color: antiquewhite;
+      color: antiquewhite;
 }
 
 .lista {
@@ -18,4 +18,68 @@
 
 .rojo {
     background-color: red;
+}
+
+
+
+
+/* ------------------------------------------------------------- */
+
+/* cristales */
+
+.cristales{
+    background-color: rgb(114, 81, 146);
+    display: grid;
+    grid-template-columns: min-content;
+    text-align: center;
+}
+
+.piedras{
+    grid-column: none;
+    width: 500px;
+}
+
+
+.img{
+    width: 300px;
+    margin: 10px;
+}
+
+.nombrecristal{
+    background-color: antiquewhite ;
+    margin: 10px;
+    height: 50px;
+    text-align: center;
+}
+
+/* anillos */
+
+
+
+.anillos{
+    background-color: rgb(114, 81, 146);
+    display: grid;
+    grid-template-columns: min-content;
+    text-align: center;
+
+}
+
+.nombreanillos{
+    background-color: antiquewhite ;
+    margin: 10px;
+    height: 50px;
+    text-align: center;
+}
+
+.cadaAnillo{
+    grid-column: none;
+    width: 500px;
+}
+
+
+/* contacto */
+
+.contacto{
+    background-color: rgb(114, 81, 146);
+   
 }
