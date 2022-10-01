@@ -39,6 +39,15 @@
     width: 500px;
 }
 
+#contenedorProductos{
+    background-color: rgb(114, 81, 146);
+    text-align: center;
+}
+
+.boton-agregar{
+    width: 100px;
+    height: 20px;
+}
 
 .img{
     width: 300px;
