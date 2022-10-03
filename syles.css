@@ -1,3 +1,20 @@
+
+body{
+    background-color: rgb(114, 81, 146);
+}
+
+.inicio{
+    display: grid;
+    grid-template-rows: auto, auto;
+
+}
+
+.principal{
+    grid-row: 2/3;
+}
+
+
+
 .menu {
     font-size: 15px;
     background-color: black;
@@ -20,7 +37,10 @@
     background-color: red;
 }
 
-
+#agregar.boton-agregar{
+    width: 150px;
+    height: auto;
+}
 
 
 /* ------------------------------------------------------------- */
@@ -61,29 +81,9 @@
     text-align: center;
 }
 
-/* anillos */
 
 
 
-.anillos{
-    background-color: rgb(114, 81, 146);
-    display: grid;
-    grid-template-columns: min-content;
-    text-align: center;
-
-}
-
-.nombreanillos{
-    background-color: antiquewhite ;
-    margin: 10px;
-    height: 50px;
-    text-align: center;
-}
-
-.cadaAnillo{
-    grid-column: none;
-    width: 500px;
-}
 
 
 /* contacto */
@@ -92,3 +92,6 @@
     background-color: rgb(114, 81, 146);
    
 }
+
+
+
