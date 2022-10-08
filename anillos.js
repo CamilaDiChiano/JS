@@ -13,7 +13,7 @@ productoAnillos.forEach(producto => {
 <h3>${producto.nombre}</h3>
 <p>$ ${producto.precio}</p>
 
-<button id = "agregar${producto.id}" class = "boton-agregar"> Agregar al carrito</button>
+<button id = "btn" class = "btn btn-secondary btn-lg"> Agregar al carrito</button>
 `;
 
     contenedorProductos.appendChild(div)
@@ -25,7 +25,6 @@ productoAnillos.forEach(producto => {
     // })
 
 })
-
 
 
 const agregarAlCarrito = (productosId) => {

@@ -12,18 +12,22 @@ productoPiedras.forEach(productop => {
 <h3>${productop.nombre}</h3>
 <p>$ ${productop.precio}</p>
 
-<button id = "agregar${productop.id}" class = "boton-agregar"> Agregar al carrito</button>
+<button id = "btn" class = "btn btn-secondary btn-lg"> Agregar al carrito</button>
 `;
 
     contenedorProductos.appendChild(div)
 
-    // const boton = document.getElementById("agregar ${productop.id}")
+//     let boton = document.getElementById("boton")
+//     let btn = document.getElementById("btn");
 
-//  boton.addEventListener('click', () => {
-//       agregarAlCarrito(productop.id)
-//    })
+//  boton.addEventListener("click", () => {
+//     btn. document.add(agregarAlCarrito)
+    
+    
+    // agregarAlCarrito(productop.id)
+//     })
 
-})
+// });
 
 
 
@@ -45,3 +49,6 @@ div.innerHTML=`
 })
 
 }
+
+
+
