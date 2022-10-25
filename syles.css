@@ -15,6 +15,12 @@ body{
 
 
 
+.nav.justify-content-center{
+    background-color: black;
+
+}
+
+
 .menu {
     font-size: 15px;
     background-color: black;
@@ -93,5 +99,36 @@ body{
    
 }
 
+.formulario{
+    width: 400px;
+    margin: auto;
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px;
+    position: relative;
 
+}
+
+.formularioTitulo{
+    text-align: center;
+    margin-top: 0;
+    
+}
+
+
+.formularioEnviar {
+    display:  block;
+    width: 100%;
+    border:  1px solid;
+    font-size:  1em;
+}
+
+.formularioInput{
+    padding: 20px;
+}
+
+.formularioLabel{
+    padding-left:  15px;
+}
 
