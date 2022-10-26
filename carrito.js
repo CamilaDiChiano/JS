@@ -1,3 +1,5 @@
+/*
+
 const tarjetas = document.getElementById('tarjetas')
 const items = document.getElementById('items')
 const footer = document.getElementById('footer')
@@ -159,3 +161,5 @@ const btnAccion = e => {
 
     e.stopPropagation()
 }
+
+*/

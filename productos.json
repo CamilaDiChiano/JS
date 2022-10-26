@@ -96,33 +96,6 @@
       "precio": 1300,
       "img": "../img/anilloturmalinanegra.jpg",
       "tipo": "anillo"
-    },
-    {
-      "id": 15,
-      "nombre": "Collar de Cuarzo cristal",
-      "precio": 1350,
-      "img": "",
-      "tipo": "collar"
-    },
-    {
-      "id": 16,
-      "nombre": "Collar de Cuarzo rosa",
-      "precio": 1100,
-      "img": "",
-      "tipo": "anillo"
-    },
-    {
-      "id": 17,
-      "nombre": "Collar de Onix negro",
-      "precio": 1260,
-      "img": "",
-      "tipo": "collar"
-    },
-    {
-      "id": 18,
-      "nombre": "Collar de Turmalina negra",
-      "precio": 1300,
-      "img": "",
-      "tipo": "collar"
     }
+   
   ]

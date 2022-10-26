@@ -223,63 +223,111 @@ comprar.addEventListener("click", (e) => {
 
 
 
-// // localStorage.setItem("productos", JSON.stringify(productosTotales));
+// localStorage.setItem("productos", JSON.stringify(productosTotales));
 
 
-// // let productosStorage = JSON.parse(localStorage.getItem("carrito"));
 
-// // if (productosStorage) {
-// //     carrito = productosStorage;
-// // }
+//  let productosStorage = JSON.parse(localStorage.getItem("carrito"));
+
+//  if (productosStorage) {
+//     carrito = productosStorage;
+// }
 
 
-// const contenedorProductos = document.getElementById('contenedorProductos');
+// ---------------------------------------------------------------------------
 
-// const contenedorDelCarrito = document.getElementById('carritoContenedor')
+//  const contenedorProductos = document.getElementById('contenedorProductos');
+//  const contenedorDelCarrito = document.getElementById('carritoContenedor')
+ const anillosContainer = document.getElementById("anillos");
+ const piedrasContainer = document.getElementById("piedras");
 
-// let carrito = [];
 
-// productosTotales.forEach(producto => {
-//     const div = document.createElement("div");
+
+
+ let carrito = [];
+
+
+ fetch("../productos.json")
+ .then((res) => res.json())
+ .then((data) => cards(data));
+
+// function cargarJSON() {
+//   fetch("../productos.json")
+//   .then((res) => res.json())
+//   .then((data) => {
+//     database.push(data);
+//     console.log(data);
+//   });
+// }
+// cargarJSON();
+
+function cards(data) {
+  data.forEach((item) => {
+    console.log(item);
+    const card = `<div class="col d-flex justify-content-center mb-4">
+                            <div class="card shadow mb-1 bg-light rounded" style="width: 18rem;">
+                            <img src=${item.img} class="card-img-top h-50" alt=${item.nombre}>
+                            <div class="card-body text-dark">
+                                <h5 class="card-title pt-2 text-center ">${item.nombre}</h5>
+                                <h5 class="text-primary">Precio: $ <span class="precio">${item.precio}</span></h5>
+                                <div class="d-grid gap-2 ">
+                                <button class="btn btn-primary  botonAdd">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        `;
+    if (item.tipo === "anillo") {
+      anillosContainer.innerHTML += card;
+    } else if (item.tipo === "piedras"){
+      piedrasContainer.innerHTML += card;
+    }
+
+    return card;
+  });
+
+//  cargarJSON.forEach(producto => {
+//      const div = document.createElement("div");
 //     div.innerHTML = `<img src= ${producto.img} class = "img">
-// <h3>${producto.nombre}</h3>
+//  <h3>${producto.nombre}</h3>
 // <p>$ ${producto.precio}</p>
 
 // <button id = "agregar ${producto.id}" class = "boton-agregar"</button>
 // `;
 
-//     contenedorProductos.appendChild(div)
+//  contenedorProductos.appendChild(div)
 
-//     const boton = document.getElementById("agregar ${producto.id}")
+//    const boton = document.getElementById("agregar ${producto.id}")
 
-//     // boton.addEventListener('click', () => {
-//     //     agregarAlCarrito(producto.id)
-//     // })
+// boton.addEventListener('click', () => {
+//   agregarAlCarrito(producto.id)
+//  })
 
-// })
-
-
+//  })
 
 
 
 
 
-// const agregarAlCarrito = (productosId) => {
-//     const item = productosTotales.find((prod) => prod.id === productosId)
-//     carrito.push(item)
-//     console.log(carrito);
-// }
 
-// const actualizacionCarrito = () => {
 
-// carrito.forEach((prod) => {
-//     const div= document.getElementById('div')
-// div.innerHTML=`
-// <p>${prod.nombre}</p>
-// <p>precio${prod.precio}</p>
+ const agregarAlCarrito = (productosId) => {
+     const item = productosTotales.find((prod) => prod.id === productosId)
+     carrito.push(item)
+     console.log(carrito);
+ }
 
-// `
+ const actualizacionCarrito = () => {
 
-// })
+ carrito.forEach((prod) => {
+     const div= document.getElementById('div')
+ div.innerHTML=`
+ <p>${prod.nombre}</p>
+ <p>precio${prod.precio}</p>
 
-// }
+ `
+
+})
+
+}}
