@@ -1,50 +1,50 @@
 
-const contenedorProductos = document.getElementById('contenedorProductos');
+// const contenedorProductos = document.getElementById('contenedorProductos');
 
-const contenedorDelCarrito = document.getElementById('carritoContenedor')
-
-
-
-productoPiedras.forEach(productop => {
-    const div = document.createElement("div");
-    div.innerHTML = `<h2 class="nombrecristal">${productop.nombre}</h2>
-    <img src= ${productop.img} class = "img">
-    <h3>${productop.nombre}</h3>
-    <p>$ ${productop.precio}</p>
-    <button id = "btn" class = "btn btn-secondary btn-lg" onclick ="añadirProductoAlCarrito${productop.id}"> Agregar al carrito</button>
-`;
-
-    contenedorProductos.appendChild(div)
-
-    let boton = document.getElementById("boton")
-    let btn = document.getElementById("btn");
-
-    //   boton.addEventListener("click", () => {
-    //   btn. document.add(agregarAlCarrito)
+// const contenedorDelCarrito = document.getElementById('carritoContenedor')
 
 
-    //  agregarAlCarrito(productop.id)
-});
 
-//  });
+// productoPiedras.forEach(productop => {
+//     const div = document.createElement("div");
+//     div.innerHTML = `<h2 class="nombrecristal">${productop.nombre}</h2>
+//     <img src= ${productop.img} class = "img">
+//     <h3>${productop.nombre}</h3>
+//     <p>$ ${productop.precio}</p>
+//     <button id = "btn" class = "btn btn-secondary btn-lg" onclick ="añadirProductoAlCarrito${productop.id}"> Agregar al carrito</button>
+// `;
 
-console.log(productoPiedras);
+//     contenedorProductos.appendChild(div)
 
-const agregarAlCarrito = (productosId) => {
-    const item = productoPiedras.find((prod) => prod.id === productosId)
-    carrito.push(item)
-    console.log(carrito);
-}
+//     let boton = document.getElementById("boton")
+//     let btn = document.getElementById("btn");
 
-const actualizacionCarrito = () => {
+//     //   boton.addEventListener("click", () => {
+//     //   btn. document.add(agregarAlCarrito)
 
-    carrito.forEach((prod) => {
-        const div = document.getElementById('div')
-        div.innerHTML = `
-<p>${prod.nombre}</p>
-<p>precio${prod.precio}</p>
-`
 
-    })
+//     //  agregarAlCarrito(productop.id)
+// });
 
-}
+// //  });
+
+// console.log(productoPiedras);
+
+// const agregarAlCarrito = (productosId) => {
+//     const item = productoPiedras.find((prod) => prod.id === productosId)
+//     carrito.push(item)
+//     console.log(carrito);
+// }
+
+// const actualizacionCarrito = () => {
+
+//     carrito.forEach((prod) => {
+//         const div = document.getElementById('div')
+//         div.innerHTML = `
+// <p>${prod.nombre}</p>
+// <p>precio${prod.precio}</p>
+// `
+
+//     })
+
+// }

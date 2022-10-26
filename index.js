@@ -236,13 +236,6 @@ comprar.addEventListener("click", (e) => {
 
 // ---------------------------------------------------------------------------
 
-//  const contenedorProductos = document.getElementById('contenedorProductos');
-//  const contenedorDelCarrito = document.getElementById('carritoContenedor')
- const anillosContainer = document.getElementById("anillos");
- const piedrasContainer = document.getElementById("piedras");
-
-
-
 
  let carrito = [];
 
@@ -251,15 +244,8 @@ comprar.addEventListener("click", (e) => {
  .then((res) => res.json())
  .then((data) => cards(data));
 
-// function cargarJSON() {
-//   fetch("../productos.json")
-//   .then((res) => res.json())
-//   .then((data) => {
-//     database.push(data);
-//     console.log(data);
-//   });
-// }
-// cargarJSON();
+
+//  productos
 
 function cards(data) {
   data.forEach((item) => {
@@ -271,7 +257,7 @@ function cards(data) {
                                 <h5 class="card-title pt-2 text-center ">${item.nombre}</h5>
                                 <h5 class="text-primary">Precio: $ <span class="precio">${item.precio}</span></h5>
                                 <div class="d-grid gap-2 ">
-                                <button class="btn btn-primary  botonAdd">Añadir al carrito</button>
+                                <button class="btn btn-primary botonAdd">Añadir al carrito</button>
                                 </div>
                             </div>
                         </div>
@@ -284,8 +270,95 @@ function cards(data) {
       piedrasContainer.innerHTML += card;
     }
 
-    return card;
+    return cards;
   });
+
+  
+  const botonAdd = document.querySelectorAll(".botonAdd");
+  botonAdd.forEach((btn) => {
+    btn.addEventListener("click", addCarrito);
+  });
+}
+
+// carrito
+
+
+function addCarrito(e) {
+  const button = e.target;
+  const item = button.closest(".card");
+  const itemTitle = item.querySelector(".card-title").textContent;
+  const itemPrice = item.querySelector(".precio").textContent;
+  const itemImg = item.querySelector(".card-img-top").src;
+
+  const newItem = {
+    title: itemTitle,
+    price: itemPrice,
+    image: itemImg,
+    cantidad: 1,
+  };
+
+  addProducto(newItem);
+}
+
+
+// function addProducto(newItem) {
+//   Toastify({
+//     text: "Producto aÃ±adido al carrito",
+//     duration: 3000,
+//     gravity: "top", // `top` or `bottom`
+//     position: "left", // `left`, `center` or `right`
+//     stopOnFocus: true, // Prevents dismissing of toast on hover
+//     style: {
+//       background: "linear-gradient(to right, #00b09b, #96c93d)",
+//     },
+//   }).showToast();
+
+  const inputElemnto = tbody.getElementsByClassName("input__elemento");
+  for (let i = 0; i < carrito.length; i++) {
+    if (carrito[i].title === newItem.title) {
+      carrito[i].cantidad++;
+      const inputValue = inputElemnto[i];
+      inputValue.value++;
+      CarritoTotal();
+      addLocalStorage();
+     
+    }
+  }
+
+  carrito.push(newItem);
+
+  renderCarrito();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //  cargarJSON.forEach(producto => {
 //      const div = document.createElement("div");
@@ -313,21 +386,21 @@ function cards(data) {
 
 
  const agregarAlCarrito = (productosId) => {
-     const item = productosTotales.find((prod) => prod.id === productosId)
-     carrito.push(item)
-     console.log(carrito);
+   const item = productosTotales.find((prod) => prod.id === productosId)
+    carrito.push(item)
+    console.log(carrito);
  }
 
- const actualizacionCarrito = () => {
+const actualizacionCarrito = () => {
 
  carrito.forEach((prod) => {
      const div= document.getElementById('div')
- div.innerHTML=`
+  div.innerHTML=`
  <p>${prod.nombre}</p>
  <p>precio${prod.precio}</p>
 
  `
 
-})
+ })
 
-}}
+ }
