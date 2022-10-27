@@ -62,21 +62,21 @@ function addCarrito(e) {
 }
 
 
-const inputElemnto = tbody.getElementsByClassName("input__elemento");
-for (let i = 0; i < carrito.length; i++) {
-  if (carrito[i].title === newItem.title) {
-    carrito[i].cantidad++;
-    const inputValue = inputElemnto[i];
-    inputValue.value++;
-    CarritoTotal();
-    addLocalStorage();
+// const inputElemnto = tbody.getElementsByClassName("input__elemento");
+// for (let i = 0; i < carrito.length; i++) {
+//   if (carrito[i].title === newItem.title) {
+//     carrito[i].cantidad++;
+//     const inputValue = inputElemnto[i];
+//     inputValue.value++;
+//     CarritoTotal();
+//     addLocalStorage();
 
-  }
-}
+//   }
+// }
 
-carrito.push(newItem);
+// carrito.push(newItem);
 
-renderCarrito();
+// renderCarrito();
 
 
 
