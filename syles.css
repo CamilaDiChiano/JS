@@ -90,8 +90,6 @@ body{
 
 
 
-
-
 /* contacto */
 
 .contacto{
@@ -122,13 +120,21 @@ body{
     width: 100%;
     border:  1px solid;
     font-size:  1em;
+    margin: inherit;
 }
 
 .formularioInput{
     padding: 20px;
+    margin: 5px;
+    width: -webkit-fill-available;
 }
 
 .formularioLabel{
     padding-left:  15px;
 }
 
+#anillosContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 20px;
+}

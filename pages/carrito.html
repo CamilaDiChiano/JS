@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel=StyleSheet href="../syles.css" type="text/css" media=screen>
+
+
+</head>
+<body>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="./piedras.html">Piedras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./anillos.html">Anillos</a>
+        </li>
+         <li class="nav-item">
+            <a class="nav-link" href="./carrito.html">Carrito</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html">Contacto</a>
+        </li>
+       
+      </ul>
+
+      <div class="container">
+        <h1>Carrito</h1>
+        <hr>
+      </div>
+
+      <main>
+        <div class="container">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <h2 class="h4 m-4 text-primary" id="home">Bienvenidos</h2>
+              <div id="home"></div>
+            </div>
+    
+            <div class="tab-pane fade" id="pills-anillos" role="tabpanel" aria-labelledby="pills-anillos-tab">
+              <h2 class="h4 m-4 text-primary">Anillos</h2>
+              <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4" id="anillos"></div>
+            </div>
+            <div class="tab-pane fade" id="pills-collares" role="tabpanel" aria-labelledby="pills-collares-tab">
+              <h2 class="h4 m-4 text-primary">Collares</h2>
+              <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4" id="collares"></div>
+            </div>
+            <div class="tab-pane fade" id="pills-piedras" role="tabpanel" aria-labelledby="pills-piedras-tab">
+              <h2 class="h4 m-4 text-primary">Piedras</h2>
+              <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4" id="piedras"></div>
+            </div>
+            <div class="tab-pane fade carrito active show" id="pills-carrito" role="tabpanel"
+              aria-labelledby="pills-carrito-tab">
+              <h2 id="carrito">Carrito</h2>
+    
+              <table class="table table-light table-hover">
+                <thead>
+                  <tr class="text-primary">
+                    <th scope="col">Productos</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                  </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+              </table>
+              <div class="row mx-4">
+                <div class="col">
+                  <h3 >Total: $<span class="total"></span></h3>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <button type="button" class="btn btn-success" id="comprar">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main> 
+
+
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../index.js"></script>
+<script src="../productos.js"></script>
+<script src="../productos.json"></script>
+
+</body>
+</html>
