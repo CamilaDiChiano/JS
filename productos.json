@@ -60,28 +60,28 @@
       "nombre": "Anillo Amatista",
       "precio": 1160,
       "img": "../img/anilloamatista.jpg",
-      "tipo": "anillo"
+      "tipo": "anillos"
     },
     {
       "id": 10,
       "nombre": "Anillo de Citrino",
       "precio": 1250,
       "img": "../img/anillocitrino.jpg",
-      "tipo": "anillo"
+      "tipo": "anillos"
     },
     {
       "id": 11,
       "nombre": "Anillo de Agata azul",
       "precio": 1050,
       "img": "../img/anilloagataazul.jpg",
-      "tipo": "anillo"
+      "tipo": "anillos"
     },
     {
       "id": 12,
       "nombre": "Anillo de Jaspe rojo",
       "precio": 1200,
       "img": "../img/anillojasperojo.jpg",
-      "tipo": "anillo"
+      "tipo": "anillos"
     },
     {
       "id": 13,

@@ -138,3 +138,9 @@ body{
     grid-template-columns: auto auto auto;
     margin-top: 20px;
 }
+
+#piedrasContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 20px;
+}

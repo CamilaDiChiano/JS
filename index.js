@@ -25,10 +25,10 @@ function cards(data) {
                     </div>
                 </div>
         `;
-    if (item.tipo === "anillo") {
-      anillosContainer.innerHTML += card;
-    } else if (item.tipo === "piedras") {
+    if (item.tipo === "piedra") {
       piedrasContainer.innerHTML += card;
+    } else if (item.tipo === "anillos") {
+      anillosContainer.innerHTML += card;
     }
 
     return cards;
@@ -60,23 +60,6 @@ function addCarrito(e) {
 
   newItem()
 }
-
-
-// const inputElemnto = tbody.getElementsByClassName("input__elemento");
-// for (let i = 0; i < carrito.length; i++) {
-//   if (carrito[i].title === newItem.title) {
-//     carrito[i].cantidad++;
-//     const inputValue = inputElemnto[i];
-//     inputValue.value++;
-//     CarritoTotal();
-//     addLocalStorage();
-
-//   }
-// }
-
-// carrito.push(newItem);
-
-// renderCarrito();
 
 
 
@@ -113,6 +96,8 @@ function tablaCarrito() {
   });
   CarritoTotal();
 }
+
+
 // total del carrito
 
 function CarritoTotal() {
