@@ -25,15 +25,16 @@ function cards(data) {
                     </div>
                 </div>
         `;
-    if (item.tipo === "piedra") {
-      piedrasContainer.innerHTML += card;
-    } else if (item.tipo === "anillos") {
-      anillosContainer.innerHTML += card;
+    if (item.tipo === "producto") {
+      productosContainer.innerHTML += card;
     }
+    // } else if (item.tipo === "anillos") {
+    //   anillosContainer.innerHTML += card;
+    // }
 
     return cards;
-  });
-
+  
+    });
 
   const botonAdd = document.querySelectorAll(".botonAdd");
   botonAdd.forEach((btn) => {

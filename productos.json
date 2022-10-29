@@ -4,98 +4,98 @@
       "nombre": "Amatista",
       "precio": 760,
       "img": "../img/amatista.jpg",
-      "tipo": "piedra"
+      "tipo": "producto"
     },
     {
       "id": 2,
       "nombre": "Citrino",
       "precio": 890,
       "img": "../img/citrino.jpg",
-      "tipo": "piedra"
+      "tipo": "producto"
     },
     {
       "id": 3,
       "nombre": "Agata azul",
       "precio": 850,
       "img": "../img/agataazul.jpg",
-      "tipo": "piedra"
+      "tipo": "producto"
     },
     {
       "id": 4,
       "nombre": "Cuarzo de cristal",
       "precio": 800,
       "img": "../img/cuarzocristal.jpg",
-      "tipo": "piedra"
+      "tipo": "producto"
     },
     {
       "id": 5,
       "nombre": "Cuarzo rosa",
       "precio": 960,
       "img": "../img/cuarzorosa.jpg",
-      "tipo": "piedra"
+      "tipo": "producto"
     },
     {
       "id": 6,
       "nombre": "Jaspe rojo",
       "precio": 890,
       "img": "../img/jasperojo.jpg",
-      "tipo": "piedra"
+      "tipo": "producto"
     },
     {
       "id": 7,
       "nombre": "Onix negro",
       "precio": 950,
       "img": "../img/onixnegro.jpg",
-      "tipo": "piedra"
+      "tipo": "producto"
     },
     {
       "id": 8,
       "nombre": "Turmalina negra",
       "precio": 900,
       "img": "../img/turmalinanegra.jpg",
-      "tipo": "piedra"
+      "tipo": "producto"
     },
     {
       "id": 9,
       "nombre": "Anillo Amatista",
       "precio": 1160,
       "img": "../img/anilloamatista.jpg",
-      "tipo": "anillos"
+      "tipo": "producto"
     },
     {
       "id": 10,
       "nombre": "Anillo de Citrino",
       "precio": 1250,
       "img": "../img/anillocitrino.jpg",
-      "tipo": "anillos"
+      "tipo": "producto"
     },
     {
       "id": 11,
       "nombre": "Anillo de Agata azul",
       "precio": 1050,
       "img": "../img/anilloagataazul.jpg",
-      "tipo": "anillos"
+      "tipo": "producto"
     },
     {
       "id": 12,
       "nombre": "Anillo de Jaspe rojo",
       "precio": 1200,
       "img": "../img/anillojasperojo.jpg",
-      "tipo": "anillos"
+      "tipo": "producto"
     },
     {
       "id": 13,
       "nombre": "Anillo de Onix negro",
       "precio": 1260,
       "img": "../img/anilloonixnegro.webp",
-      "tipo": "anillo"
+      "tipo": "producto"
     },
     {
       "id": 14,
       "nombre": "Anillo de Turmalina negra",
       "precio": 1300,
       "img": "../img/anilloturmalinanegra.jpg",
-      "tipo": "anillo"
+      "tipo": "producto"
     }
    
   ]
