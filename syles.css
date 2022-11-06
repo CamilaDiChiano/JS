@@ -141,3 +141,8 @@ body{
     display: flex;
 
 }
+
+
+.tab-content>.active {
+    display: block;
+    height: 500px;}

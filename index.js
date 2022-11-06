@@ -28,22 +28,22 @@ function cards(data) {
     if (item.tipo === "producto") {
       productosContainer.innerHTML += card;
     }
-    // } else if (item.tipo === "anillos") {
-    //   anillosContainer.innerHTML += card;
-    // }
+    
 
     return cards;
   
     });
 
-  const botonAdd = document.querySelectorAll(".botonAdd");
-  botonAdd.forEach((btn) => {
-    btn.addEventListener("click", addCarrito);
-  });
-}
+   const botonAdd = document.querySelectorAll(".botonAdd");
+   botonAdd.forEach(btn => {
+     btn.addEventListener('click', addCarrito);
+   });
+
+   
+
+
 
 // carrito
-
 
 function addCarrito(e) {
   const button = e.target;
@@ -59,7 +59,7 @@ function addCarrito(e) {
     cantidad: 1,
   };
 
-  newItem()
+ 
 }
 
 
@@ -152,12 +152,12 @@ const inicio = (window.onload = function () {
   const storage = JSON.parse(localStorage.getItem("carrito"));
   if (storage) {
     carrito = storage;
-    renderCarrito();
+    // renderCarrito();
   }
 });
 
 comprar.addEventListener("click", (e) => {
-  carrito = [];
+  
   addLocalStorage();
   renderCarrito();
   Swal.fire({
@@ -168,3 +168,5 @@ comprar.addEventListener("click", (e) => {
     timer: 1500,
   });
 });
+
+}
