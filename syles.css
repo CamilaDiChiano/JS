@@ -142,7 +142,14 @@ body{
 
 }
 
+.table__img{
+    width: 200px;
+    height: 200px;
+}
+
 
 .tab-content>.active {
     display: block;
     height: 500px;}
+
+
